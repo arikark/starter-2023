@@ -13,6 +13,7 @@ export default defineConfig({
   },
   plugins: [react()],
   test: {
+    setupFiles: ["./vitest.setup.ts"],
     globals: true,
     environment: "happy-dom",
   },
